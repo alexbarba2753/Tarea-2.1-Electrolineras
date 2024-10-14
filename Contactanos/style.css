@@ -1,0 +1,136 @@
+/* Estilo del cuerpo*/
+body {
+    font-family: 'Arial'; /*Tipografia*/
+    background-color: white; /*Color del fondo*/
+    overflow-x: hidden; /*Limitar eje x*/ 
+    margin: 0; 
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+    display: flex;
+    justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+    align-items: center;
+    padding: 10px;
+    background-color: #D0F6F0; /* Fondo claro del header */
+    position: relative;
+    z-index: 2; 
+
+}
+
+/* Estilo para el logo en el header */
+.logo img {
+    position: relative;
+    max-width: 60px; /* Tamaño máximo del logo */
+    right: -50%;
+    cursor: pointer;
+}
+
+.logo img:hover{
+    transform: scale(1.07);
+}
+
+/* Estilos del menú de navegación */
+.menu a {
+    margin: 0 20px; /* Espaciado entre los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px; 
+}
+
+.menu a:hover{
+    background-color: #87d4cf;
+    border-radius: 5px;
+    text-shadow: none;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+    display: grid;
+    place-items: center; /* Alinea tanto vertical como horizontalmente */
+}
+
+.card img {
+    width: 152px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    background: linear-gradient(to right, #D3EEFC, #99FF8A);
+    padding: 10px 200;
+    border-radius: 5px;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.card p {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    display: flex;                /* Activa Flexbox */
+    justify-content: space-between; /* Espacio entre el texto y los íconos */
+    align-items: center;           /* Centra verticalmente ambos elementos */
+    padding: 20px;
+    background-color: black;       /* Fondo negro */
+    color: white;                  /* Texto en blanco */
+    font-size: 25px;
+}
+  
+.redes-sociales {
+    display: flex;
+    align-items: center;           /* Centra verticalmente los íconos dentro del contenedor */
+    position: relative;
+    right: 5%;
+}
+  
+.redes-sociales img {
+    width: 40px;                   /* Ajusta el tamaño de los íconos */
+    margin-left: 15px;             /* Espacio entre los íconos */
+    cursor: pointer;
+}
+
+.redes-sociales img:hover{
+    transform: scale(1.1); 
+}

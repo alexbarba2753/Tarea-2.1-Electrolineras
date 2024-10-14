@@ -1,0 +1,162 @@
+/* Estilo del cuerpo*/
+body {
+    font-family: 'Arial'; /*Tipografia*/
+    background-color: white; /*Color del fondo*/
+    overflow-x: hidden; /*Limitar eje x*/ 
+    margin: 0; 
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+    display: flex;
+    justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+    align-items: center;
+    padding: 10px;
+    background-color: #D0F6F0; /* Fondo claro del header */
+    position: relative;
+    z-index: 2; 
+
+}
+
+/* Estilo para el logo en el header */
+.logo img {
+    position: relative;
+    max-width: 60px; /* Tamaño máximo del logo */
+    right: -50%;
+    cursor: pointer;
+}
+
+.logo img:hover{
+    transform: scale(1.07);
+}
+
+/* Estilos del menú de navegación */
+.menu a {
+    margin: 0 20px; /* Espaciado entre los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px; 
+}
+
+.menu a:hover{
+    background-color: #87d4cf;
+    border-radius: 5px;
+    text-shadow: none;
+
+}
+
+/* Sección principal de la imagen con el vehículo y el texto ¿Quiénes somos? */
+.main {
+    position: relative; /* Posiciona los elementos dentro de la sección relativa a esta */
+    text-align: center; /* Centra el contenido */
+
+}
+
+.main img {
+    width: 100%; /* Imagen ocupa todo el ancho de la pantalla */
+    height: auto; /* Mantiene proporciones */
+    position: relative;
+    z-index: 0;
+}
+
+/* Sección del círculo verde con el texto "¿Quiénes somos?" */
+.quienes-somos {
+    position: absolute;
+    top: -42%; /* Ajusta la posición del círculo */
+    right: -2%; /* Mueve el círculo hacia la derecha */
+
+}
+
+.circulo-verde {
+    background: linear-gradient(90deg, #D3EEFC, #99FF8A); /* Degradado verde */
+    width: 670px; /* Ancho del círculo */
+    height: 550px; /* Altura del círculo */
+    border-radius: 50%; /* Hace que el div sea un círculo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center;
+    position: static;
+    z-index: 1;
+    
+}
+
+.circulo-verde h2 {
+    font-size: 65px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: 25%; 
+    right: 2%; 
+    font-family: 'Poppins';
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.circulo-verde p {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #0D3DA6;
+    padding: 80px;
+    position: relative;
+    top: 5%; 
+    right: 1%;
+    font-family: 'Candara';
+}
+
+/* Sección "Nuestra Experiencia" */
+.experiencia {
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.experiencia h2 {
+    font-size: 50px;
+    color: #A5FCA1; /* Color verde */
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Comic Sans MS';
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.7);
+    -webkit-text-stroke: 0.2px white;
+}
+
+.experiencia p {
+    font-size: 27px;
+    color: #333; /* Color gris oscuro para el texto */
+    font-family: 'Candara';
+    font-weight: bold;
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.25);
+
+}
+
+footer {
+    display: flex;                /* Activa Flexbox */
+    justify-content: space-between; /* Espacio entre el texto y los íconos */
+    align-items: center;           /* Centra verticalmente ambos elementos */
+    padding: 20px;
+    background-color: black;       /* Fondo negro */
+    color: white;                  /* Texto en blanco */
+    font-size: 25px;
+}
+  
+.redes-sociales {
+    display: flex;
+    align-items: center;           /* Centra verticalmente los íconos dentro del contenedor */
+    position: relative;
+    right: 5%;
+}
+  
+.redes-sociales img {
+    width: 40px;                   /* Ajusta el tamaño de los íconos */
+    margin-left: 15px;             /* Espacio entre los íconos */
+    cursor: pointer;
+}
+
+.redes-sociales img:hover{
+    transform: scale(1.1); 
+}

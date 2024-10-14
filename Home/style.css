@@ -1,0 +1,198 @@
+/* Estilo del cuerpo*/
+body {
+    font-family: 'Arial'; /*Tipografia*/
+    background-color: white; /*Color del fondo*/
+    overflow-x: hidden; /*Limitar eje x*/ 
+    margin: 0; 
+    padding: 0;
+    
+}
+
+/* Estilos del encabezado */
+header {
+    display: flex;
+    justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+    align-items: center;
+    padding: 10px;
+    background-color: #D0F6F0; /* Fondo claro del header */
+    position: relative;
+    z-index: 2; 
+
+}
+
+/* Estilo para el logo en el header */
+.logo img {
+    position: relative;
+    max-width: 60px; /* Tamaño máximo del logo */
+    right: -50%;
+    cursor: pointer;
+}
+
+.logo img:hover{
+    transform: scale(1.07);
+}
+
+/* Estilos del menú de navegación */
+.menu a {
+    margin: 0 20px; /* Espaciado entre los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    
+}
+
+.menu a:hover{
+    background-color: #87d4cf;
+    border-radius: 5px;
+    text-shadow: none;
+
+}
+
+.espacio{
+    padding: 20px;
+}
+
+.container {
+    padding: 50px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 15%;
+    background: linear-gradient(to right, #D3EEFC, #99FF8A);
+    
+}
+
+.container h1 {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+}
+
+.imagen1 img{
+    height: 150px;
+    width: auto;    
+    position: absolute;
+    right: 30%;
+    top: 22%;
+}
+
+.imagen2 img{
+    height: 150px;
+    width: auto;position: absolute;
+    right: 15%;
+    top: 22%;
+}
+
+.buttons {
+    margin-top: 15px;
+    position: absolute;
+    left: 14%;
+    top: 35%;
+}
+
+button {
+    background-color: #efefef;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+
+/* Estilos para la sección principal */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Estilos para la imagen de instrucciones */
+.instructions img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 150px;
+}
+
+.info {
+    background-color: #e0f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 650px;
+    height: 300px;
+    margin-right: 150px;
+    
+}
+
+.info h2 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+
+}
+
+.info p {
+    font-size: 1rem;
+    color: black;
+    text-align: justify;
+    width: 40%;
+    position: absolute;
+    right: 15%;
+}
+
+.actions {
+    margin-top: 20px;
+    position: absolute;
+    top: 90%;
+    right: 21%;
+}
+
+.actions button {
+    margin: 0 10px;
+    
+}
+
+
+footer {
+    display: flex;                /* Activa Flexbox */
+    justify-content: space-between; /* Espacio entre el texto y los íconos */
+    align-items: center;           /* Centra verticalmente ambos elementos */
+    padding: 20px;
+    background-color: black;       /* Fondo negro */
+    color: white;                  /* Texto en blanco */
+    font-size: 25px;
+}
+  
+.redes-sociales {
+    display: flex;
+    align-items: center;           /* Centra verticalmente los íconos dentro del contenedor */
+    position: relative;
+    right: 5%;
+}
+  
+.redes-sociales img {
+    width: 40px;                   /* Ajusta el tamaño de los íconos */
+    margin-left: 15px;             /* Espacio entre los íconos */
+    cursor: pointer;
+}
+
+.redes-sociales img:hover{
+    transform: scale(1.1); 
+}
