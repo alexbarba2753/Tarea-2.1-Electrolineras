@@ -4,9 +4,9 @@ Integrantes
 
 Mateo Barba
 
-Papu Diaz
+Daniel Diaz
 
 Edison Escobar
 
-Andrés 
+Andrés Panchi
 
